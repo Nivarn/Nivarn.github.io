@@ -1,0 +1,535 @@
+/* Reset Website standard values */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Home Page */
+
+/* Background image for home page */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(Images/mountain_view_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    width: 250px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Text box and button styles */
+.text-box-index {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box-index h1 {
+    font-size: 64px;
+    text-decoration: underline;
+}
+
+.text-box-index p {
+    margin: 50px 3px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #1c3758;
+    background: #1c3758;
+    transition: 1s;
+}
+
+/* SIGN UP */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1C3757;
+    color: #fff;
+}
+
+.footer h3 {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Sign-up header and form styles */
+.header-signup {
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/maunga_club_cabin.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.about-us{
+    width: 100%;
+    padding: 78px 0;
+}
+
+.about-us-main img{
+    height: auto;
+    width: 420px;
+    margin: 10px 0;
+    transition: 1s;
+}
+
+.about-us-main img:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+.about-text{
+     width: 550px;
+     margin-top: 10px;
+}
+
+
+.about-text h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+   font-size: 25px;
+   text-transform: capitalize;
+   margin-bottom: 25px;
+}
+
+.about-text p{
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about-us-main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.chalet-overview{
+    margin: 10px auto;
+    padding: 0 10%;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.chalet-overview h1{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-signup{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.box{
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box img{
+    height: 200px;
+    transform: scale(1);
+}
+
+.box img:hover{
+    transform: scale(1.10);
+    transition: 1s;
+}
+
+.box h3{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.box p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.kereru-btn{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 24px 60px;
+    background: #333;
+    display: inline-block;
+    text-decoration: none;
+    transition: 1s;    
+}
+
+.kereru-btn:hover{
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.kereru-btn:hover{
+    transform: scale(1.10);
+
+}
+
+@media (max-width:770px) {
+    .wrapper{
+        padding: 20px;
+    }
+}
+
+
+.pukeko-btn{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 24px 60px;
+    background: #333;
+    display: inline-block;
+    text-decoration: none;
+    transition: 1s;    
+}
+
+.pukeko-btn:hover{
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.pukeko-btn:hover{
+    transform: scale(1.10);
+
+}
+
+.kakapo-btn{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 24px 60px;
+    background: #333;
+    display: inline-block;
+    text-decoration: none;   
+    transition: 1s; 
+}
+
+.kakapo-btn:hover{
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.kakapo-btn:hover{
+    transform: scale(1.10);
+
+}
+
+.signup-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    border: 1px solid #1c3758;
+    background: #1c3758;
+    color: #fff;
+    transition: 1s;
+}
+
+.signup-form-box {
+    border: 1px solid #ccc;
+    margin: 300px 0 0;
+    padding: 10px 20px;
+}
+
+.signup-form-box h3 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form input,
+.signup-form textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+
+.file-upload-label-address h1{
+    font-size: 20px;
+}
+
+.file-upload-label-id h1{
+    font-size: 20px;
+}
+
+/* Pukeko Page */
+.header-pukeko {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),  url(Images/pukeko_chalet_exterior.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box-pukeko {
+    width: 70%;
+    color: #fff;
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #1c3758;
+}
+
+.text-box-pukeko h1 {
+    font-size: 64px;
+    text-decoration: underline;
+}
+
+.text-box-pukeko p {
+    margin: 15px 2px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Kereru Page */
+.header-kereru {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/kereru_cabin_exterior.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box-kereru {
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #1c3758;
+}
+
+.text-box-kereru h1 {
+    font-size: 64px;
+    text-decoration: underline;
+}
+
+.text-box-kereru p {
+    margin: 15px 2px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Kakapo Page */
+.header-kakapo {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(Images/kakapo_cabin_exterior.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box-kakapo {
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #1c3758;
+}
+
+.text-box-kakapo h1 {
+    font-size: 64px;
+    text-decoration: underline;
+}
+
+.text-box-kakapo p {
+    margin: 15px 2px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Chalets Info */
+.text-box-chalet-view {
+    position: relative;
+    text-align: center;
+}
+
+.pukeko-info,
+.kereru-info,
+.kakapo-info {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* Chalet Columns */
+.pukeko-col,
+.kereru-col,
+.kakapo-col {
+    flex-basis: 31%;
+    background: #03a89e;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.pukeko-col:hover,
+.kereru-col:hover,
+.kakapo-col:hover {
+    transform: scale(1.05);
+    transition: 1s;
+
+}
+
+.pukeko-col p,
+.kereru-col p,
+.kakapo-col p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.pukeko-col h3,
+.kereru-col h3,
+.kakapo-col h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.gallery-thumbs{
+    transition: 1s;
+}
+
+.gallery-thumbs:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+
+/* Footer for Chalets Pages */
+.footer-chalets {
+    background-color: #1C3757;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.footer-chalets h3 {
+    margin-bottom: 25px;
+    margin: 20px;
+    font-weight: 600;
+}
